@@ -53,6 +53,14 @@ $ docker build -t project-name .
 $ docker run -p 3000:3000 project-name .
 ```
 
+# docker tag renombrar la imagen
+``` bash
+$ docker tag project-name us-central1-docker.pkg.dev/davinici-pod-desarrollo/demo-docker-repository/project-name 
+```
+
+``` bash
+$ docker tag project-name ${URL_REPOSITORY}$/${PROJECT_NAME}$/${REPOSITORY_NAME}$/project-name 
+```
 
 
 ## Run tests
