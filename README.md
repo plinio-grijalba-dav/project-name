@@ -61,7 +61,15 @@ $ docker tag project-name us-central1-docker.pkg.dev/davinici-pod-desarrollo/dem
 ``` bash
 $ docker tag project-name ${URL_REPOSITORY}$/${PROJECT_NAME}$/${REPOSITORY_NAME}$/project-name 
 ```
+# docker push
+``` bash
+$ docker push us-central1-docker.pkg.dev/davinici-pod-desarrollo/demo-docker-repository/project-name 
+```
 
+# Deploy cloud run
+``` bash
+$ gcloud run deploy project-name --region us-central1 --allow-unauthenticated  --image us-central1-docker.pkg.dev/davinici-pod-desarrollo/demo-docker-repository/project-name 
+```
 
 ## Run tests
 
