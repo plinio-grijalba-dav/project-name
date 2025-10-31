@@ -71,6 +71,11 @@ $ docker push us-central1-docker.pkg.dev/davinici-pod-desarrollo/demo-docker-rep
 $ gcloud run deploy project-name --region us-central1 --allow-unauthenticated  --image us-central1-docker.pkg.dev/davinici-pod-desarrollo/demo-docker-repository/project-name 
 ```
 
+# Comand execute cloud build
+``` bash
+$  gcloud builds submit --config=Cloudbuild.yaml
+```
+
 ## Run tests
 
 ```bash
