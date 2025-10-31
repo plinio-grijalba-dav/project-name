@@ -43,6 +43,17 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+## Docker
+``` bash
+# docker build
+$ docker build -t project-name .
+```
+``` bash
+# docker run
+$ docker run -p 3000:3000 project-name .
+```
+
+
 
 ## Run tests
 
